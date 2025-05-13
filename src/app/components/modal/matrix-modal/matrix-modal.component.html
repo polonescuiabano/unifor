@@ -1,0 +1,27 @@
+<div class="modal-overlay" *ngIf="isVisible">
+  <div class="modal-content">
+    <h2>{{ matrixData?.id ? 'Editar' : 'Adicionar' }} Matriz Curricular</h2>
+
+    <form (ngSubmit)="onSave()">
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Curso</mat-label>
+        <input matInput [(ngModel)]="matrixData.course" name="course" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Semestre</mat-label>
+        <input matInput [(ngModel)]="matrixData.semester" name="semester" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Disciplina</mat-label>
+        <input matInput [(ngModel)]="matrixData.subject" name="subject" required />
+      </mat-form-field>
+
+      <div class="modal-actions">
+        <button mat-raised-button color="primary" type="submit">Salvar</button>
+        <button mat-stroked-button type="button" (click)="onClose()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>
