@@ -1,0 +1,19 @@
+<div *ngIf="userRoles.includes('adminstrador')">
+  <app-admin></app-admin>
+</div>
+
+<div *ngIf="userRoles.includes('coordenador')">
+  <app-coordinator></app-coordinator>
+</div>
+
+<div *ngIf="userRoles.includes('professor')">
+  <app-professorandstudent></app-professorandstudent>
+</div>
+
+<div *ngIf="userRoles.includes('aluno')">
+  <app-professorandstudent></app-professorandstudent>
+</div>
+
+
+
+<button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
