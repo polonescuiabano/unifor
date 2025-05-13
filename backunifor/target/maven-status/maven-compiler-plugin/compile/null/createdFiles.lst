@@ -1,0 +1,12 @@
+com\example\StudentAndProfessorResource.class
+com\example\KeycloakAdminService.class
+com\example\Semester.class
+com\example\User.class
+com\example\CurriculumMatrix.class
+com\example\AdminResource.class
+com\example\KeycloakClient.class
+com\example\Course.class
+com\example\MyEntity.class
+com\example\ExampleResource.class
+com\example\CoordinatorResource.class
+com\example\Subject.class
